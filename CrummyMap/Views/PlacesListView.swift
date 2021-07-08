@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PlacesListView: View {
-    private var places = ["Some Place", "Another Place"]
+    @EnvironmentObject private var viewModel: PlacesListViewModel
 
     var body: some View {
         NavigationView {
@@ -9,14 +9,17 @@ struct PlacesListView: View {
                 Text("Search Bar")
                 Spacer()
                 List {
-                    ForEach(places, id: \.self) { place in
-                        NavigationLink(destination: PlaceDetailView(place: place)) {
-                            Text(place)
+                    ForEach(viewModel.places, id: \.self) { place in
+                        NavigationLink(destination: PlaceDetailView(place: place.formatted)) {
+                            Text(place.formatted)
                         }
                     }
                 }
                 Spacer()
             }
+        }
+        .onAppear() {
+            viewModel.getPlaces(text: "Austin, Texas, USA")
         }
     }
 }
