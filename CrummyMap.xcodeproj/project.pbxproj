@@ -23,6 +23,9 @@
 		070C384B2697246D00AD9BE9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 070C384A2697246D00AD9BE9 /* Localizable.strings */; };
 		070C38512697249900AD9BE9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C38502697249900AD9BE9 /* String+Extensions.swift */; };
 		070C385A269725E900AD9BE9 /* PlacesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C3859269725E900AD9BE9 /* PlacesListViewModel.swift */; };
+		070C386326972C4B00AD9BE9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C386226972C4B00AD9BE9 /* SearchBar.swift */; };
+		070C386B26972CE000AD9BE9 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C386A26972CE000AD9BE9 /* UIApplication+Extensions.swift */; };
+		070C387026972CF600AD9BE9 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C386F26972CF600AD9BE9 /* Image+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		070C384A2697246D00AD9BE9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		070C38502697249900AD9BE9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		070C3859269725E900AD9BE9 /* PlacesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListViewModel.swift; sourceTree = "<group>"; };
+		070C386226972C4B00AD9BE9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		070C386A26972CE000AD9BE9 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		070C386F26972CF600AD9BE9 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 		070C38092697170300AD9BE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				070C386126972C3D00AD9BE9 /* Components */,
 				070C381926971BE000AD9BE9 /* PlaceDetailView.swift */,
 				070C37D92697160D00AD9BE9 /* PlacesListView.swift */,
 			);
@@ -203,7 +210,9 @@
 		070C384F2697248700AD9BE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				070C386F26972CF600AD9BE9 /* Image+Extensions.swift */,
 				070C38502697249900AD9BE9 /* String+Extensions.swift */,
+				070C386A26972CE000AD9BE9 /* UIApplication+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,6 +223,14 @@
 				070C3859269725E900AD9BE9 /* PlacesListViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		070C386126972C3D00AD9BE9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				070C386226972C4B00AD9BE9 /* SearchBar.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,8 +366,11 @@
 				070C38512697249900AD9BE9 /* String+Extensions.swift in Sources */,
 				070C37DA2697160D00AD9BE9 /* PlacesListView.swift in Sources */,
 				070C381A26971BE000AD9BE9 /* PlaceDetailView.swift in Sources */,
+				070C387026972CF600AD9BE9 /* Image+Extensions.swift in Sources */,
 				070C382E2697232300AD9BE9 /* APIClientProtocol.swift in Sources */,
+				070C386B26972CE000AD9BE9 /* UIApplication+Extensions.swift in Sources */,
 				070C3840269723D400AD9BE9 /* APIDecoder.swift in Sources */,
+				070C386326972C4B00AD9BE9 /* SearchBar.swift in Sources */,
 				070C37D82697160D00AD9BE9 /* CrummyMapApp.swift in Sources */,
 				070C385A269725E900AD9BE9 /* PlacesListViewModel.swift in Sources */,
 				070C38252697230600AD9BE9 /* APIClient.swift in Sources */,

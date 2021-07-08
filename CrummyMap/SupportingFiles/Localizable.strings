@@ -1,2 +1,9 @@
 // Errors
 "url_creation_error" = "Couldn't create URL";
+
+// Search Bar
+"search_bar_placeholder" = "Search";
+"cancel_button" = "Cancel";
+
+// Place List View
+"places_list_view_title" = "Find a place";
