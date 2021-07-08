@@ -95,11 +95,8 @@
 		070C37D62697160D00AD9BE9 /* CrummyMap */ = {
 			isa = PBXGroup;
 			children = (
-				070C37D72697160D00AD9BE9 /* CrummyMapApp.swift */,
-				070C37D92697160D00AD9BE9 /* ContentView.swift */,
-				070C37DB2697160D00AD9BE9 /* Assets.xcassets */,
-				070C37E02697160D00AD9BE9 /* Info.plist */,
-				070C37DD2697160D00AD9BE9 /* Preview Content */,
+				070C3808269716FC00AD9BE9 /* SupportingFiles */,
+				070C38092697170300AD9BE9 /* Views */,
 			);
 			path = CrummyMap;
 			sourceTree = "<group>";
@@ -128,6 +125,25 @@
 				070C37F62697160E00AD9BE9 /* Info.plist */,
 			);
 			path = CrummyMapUITests;
+			sourceTree = "<group>";
+		};
+		070C3808269716FC00AD9BE9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				070C37D72697160D00AD9BE9 /* CrummyMapApp.swift */,
+				070C37E02697160D00AD9BE9 /* Info.plist */,
+				070C37DB2697160D00AD9BE9 /* Assets.xcassets */,
+				070C37DD2697160D00AD9BE9 /* Preview Content */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		070C38092697170300AD9BE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				070C37D92697160D00AD9BE9 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,10 +434,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"CrummyMap/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CrummyMap/SupportingFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 2ZW86QRWD4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CrummyMap/Info.plist;
+				INFOPLIST_FILE = CrummyMap/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,10 +456,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"CrummyMap/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CrummyMap/SupportingFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 2ZW86QRWD4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CrummyMap/Info.plist;
+				INFOPLIST_FILE = CrummyMap/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

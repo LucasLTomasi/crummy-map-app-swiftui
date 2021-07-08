@@ -1,10 +1,3 @@
-//
-//  CrummyMapUITests.swift
-//  CrummyMapUITests
-//
-//  Created by Lucas Tomasi on 08/07/21.
-//
-
 import XCTest
 
 class CrummyMapUITests: XCTestCase {
