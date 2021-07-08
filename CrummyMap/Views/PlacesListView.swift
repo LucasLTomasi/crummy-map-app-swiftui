@@ -8,15 +8,11 @@ struct PlacesListView: View {
         NavigationView {
             VStack {
                 searchBar
-                Spacer()
                 placesList
             }
             .navigationBarTitle(Text(String.Localizable.placesListViewTitle))
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        .onAppear {
-            viewModel.getPlaces(text: "Austin, Texas, USA")
-        }
     }
 
     private var searchBar: some View {
@@ -26,7 +22,30 @@ struct PlacesListView: View {
         .padding(.horizontal)
     }
 
+    @ViewBuilder
     private var placesList: some View {
+        switch viewModel.getAppropriateViewOption(with: searchText) {
+        case .idle:
+            placesListPlaceholder
+        case .showPlaces:
+            placesListWithResults
+        }
+    }
+
+    private var placesListPlaceholder: some View {
+        VStack {
+            Spacer()
+            Image.arrowtriangleUpFill
+                .resizable()
+                .frame(width: 30, height: 30)
+            Text(String.Localizable.placesListViewPlaceholderText)
+                .font(.title2)
+            Spacer()
+        }
+        .padding(.horizontal)
+    }
+
+    private var placesListWithResults: some View {
         List {
             ForEach(viewModel.places, id: \.self) { place in
                 NavigationLink(destination: PlaceDetailView(place: place.formatted)) {
