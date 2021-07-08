@@ -26,6 +26,7 @@
 		070C386326972C4B00AD9BE9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C386226972C4B00AD9BE9 /* SearchBar.swift */; };
 		070C386B26972CE000AD9BE9 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C386A26972CE000AD9BE9 /* UIApplication+Extensions.swift */; };
 		070C387026972CF600AD9BE9 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C386F26972CF600AD9BE9 /* Image+Extensions.swift */; };
+		070C387B26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C387A26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		070C386226972C4B00AD9BE9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		070C386A26972CE000AD9BE9 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		070C386F26972CF600AD9BE9 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
+		070C387A26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,9 +174,9 @@
 		070C38092697170300AD9BE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				070C386126972C3D00AD9BE9 /* Components */,
 				070C381926971BE000AD9BE9 /* PlaceDetailView.swift */,
 				070C37D92697160D00AD9BE9 /* PlacesListView.swift */,
+				070C386126972C3D00AD9BE9 /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				070C386F26972CF600AD9BE9 /* Image+Extensions.swift */,
+				070C387A26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift */,
 				070C38502697249900AD9BE9 /* String+Extensions.swift */,
 				070C386A26972CE000AD9BE9 /* UIApplication+Extensions.swift */,
 			);
@@ -367,6 +370,7 @@
 				070C37DA2697160D00AD9BE9 /* PlacesListView.swift in Sources */,
 				070C381A26971BE000AD9BE9 /* PlaceDetailView.swift in Sources */,
 				070C387026972CF600AD9BE9 /* Image+Extensions.swift in Sources */,
+				070C387B26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift in Sources */,
 				070C382E2697232300AD9BE9 /* APIClientProtocol.swift in Sources */,
 				070C386B26972CE000AD9BE9 /* UIApplication+Extensions.swift in Sources */,
 				070C3840269723D400AD9BE9 /* APIDecoder.swift in Sources */,

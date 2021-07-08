@@ -9,3 +9,6 @@
 "places_list_view_title" = "Find a place";
 "places_list_view_placeholder_text" = "Type something\non the search bar";
 "places_list_view_loading" = "Loading...";
+
+// Place Detail View
+"place_detail_view_title" = "Details";

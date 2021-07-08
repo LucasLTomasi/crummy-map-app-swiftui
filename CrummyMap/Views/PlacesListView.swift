@@ -64,7 +64,7 @@ struct PlacesListView: View {
     private var placesListWithResults: some View {
         List {
             ForEach(viewModel.places, id: \.self) { place in
-                NavigationLink(destination: PlaceDetailView(place: place.formatted)) {
+                NavigationLink(destination: PlaceDetailView(place: place)) {
                     Text(place.formatted)
                 }
             }
