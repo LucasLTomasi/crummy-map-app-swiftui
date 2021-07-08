@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		070C37D82697160D00AD9BE9 /* CrummyMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C37D72697160D00AD9BE9 /* CrummyMapApp.swift */; };
-		070C37DA2697160D00AD9BE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C37D92697160D00AD9BE9 /* ContentView.swift */; };
+		070C37DA2697160D00AD9BE9 /* PlacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C37D92697160D00AD9BE9 /* PlacesListView.swift */; };
 		070C37DC2697160D00AD9BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070C37DB2697160D00AD9BE9 /* Assets.xcassets */; };
 		070C37DF2697160D00AD9BE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070C37DE2697160D00AD9BE9 /* Preview Assets.xcassets */; };
 		070C37EA2697160E00AD9BE9 /* CrummyMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C37E92697160E00AD9BE9 /* CrummyMapTests.swift */; };
 		070C37F52697160E00AD9BE9 /* CrummyMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C37F42697160E00AD9BE9 /* CrummyMapUITests.swift */; };
+		070C381A26971BE000AD9BE9 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C381926971BE000AD9BE9 /* PlaceDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 /* Begin PBXFileReference section */
 		070C37D42697160D00AD9BE9 /* CrummyMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrummyMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		070C37D72697160D00AD9BE9 /* CrummyMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrummyMapApp.swift; sourceTree = "<group>"; };
-		070C37D92697160D00AD9BE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		070C37D92697160D00AD9BE9 /* PlacesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListView.swift; sourceTree = "<group>"; };
 		070C37DB2697160D00AD9BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		070C37DE2697160D00AD9BE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		070C37E02697160D00AD9BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +46,7 @@
 		070C37F02697160E00AD9BE9 /* CrummyMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrummyMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		070C37F42697160E00AD9BE9 /* CrummyMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrummyMapUITests.swift; sourceTree = "<group>"; };
 		070C37F62697160E00AD9BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		070C381926971BE000AD9BE9 /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +143,8 @@
 		070C38092697170300AD9BE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				070C37D92697160D00AD9BE9 /* ContentView.swift */,
+				070C381926971BE000AD9BE9 /* PlaceDetailView.swift */,
+				070C37D92697160D00AD9BE9 /* PlacesListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,7 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				070C37DA2697160D00AD9BE9 /* ContentView.swift in Sources */,
+				070C37DA2697160D00AD9BE9 /* PlacesListView.swift in Sources */,
+				070C381A26971BE000AD9BE9 /* PlaceDetailView.swift in Sources */,
 				070C37D82697160D00AD9BE9 /* CrummyMapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

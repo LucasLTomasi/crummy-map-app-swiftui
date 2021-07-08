@@ -4,7 +4,7 @@ import SwiftUI
 struct CrummyMapApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlacesListView()
         }
     }
 }
