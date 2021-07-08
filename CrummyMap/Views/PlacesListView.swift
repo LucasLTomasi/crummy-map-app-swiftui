@@ -8,19 +8,24 @@ struct PlacesListView: View {
             VStack {
                 Text("Search Bar")
                 Spacer()
-                List {
-                    ForEach(viewModel.places, id: \.self) { place in
-                        NavigationLink(destination: PlaceDetailView(place: place.formatted)) {
-                            Text(place.formatted)
-                        }
-                    }
-                }
+                placesList
                 Spacer()
             }
         }
-        .onAppear() {
+        .onAppear {
             viewModel.getPlaces(text: "Austin, Texas, USA")
         }
+    }
+
+    private var placesList: some View {
+        List {
+            ForEach(viewModel.places, id: \.self) { place in
+                NavigationLink(destination: PlaceDetailView(place: place.formatted)) {
+                    Text(place.formatted)
+                }
+            }
+        }
+        .listStyle(PlainListStyle())
     }
 }
 
