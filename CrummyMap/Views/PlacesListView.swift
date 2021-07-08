@@ -2,7 +2,7 @@ import SwiftUI
 
 struct PlacesListView: View {
     @EnvironmentObject private var viewModel: PlacesListViewModel
-    @State private var searchText = ""
+    @StateObject private var textFieldObserver = TextFieldObserver()
 
     var body: some View {
         NavigationView {
@@ -16,15 +16,18 @@ struct PlacesListView: View {
     }
 
     private var searchBar: some View {
-        SearchBar(searchText: $searchText) {
-            viewModel.getPlaces(text: searchText)
+        SearchBar(searchText: $textFieldObserver.text) {
+            viewModel.isLoading = true
         }
+        .onReceive(textFieldObserver.$debouncedText, perform: { text in
+            viewModel.getPlaces(text: text)
+        })
         .padding(.horizontal)
     }
 
     @ViewBuilder
     private var placesList: some View {
-        switch viewModel.getAppropriateViewOption(with: searchText) {
+        switch viewModel.getAppropriateViewOption(with: textFieldObserver.text) {
         case .idle:
             placesListPlaceholder
         case .loading:

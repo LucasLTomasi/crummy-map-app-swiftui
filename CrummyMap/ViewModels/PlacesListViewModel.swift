@@ -11,7 +11,7 @@ class PlacesListViewModel: ObservableObject {
     private let apiClient = APIClient.shared
     private var disposables = Set<AnyCancellable>()
     @Published private(set) var places: [Place] = []
-    @Published private(set) var isLoading: Bool = false
+    @Published var isLoading: Bool = false
 
     func getAppropriateViewOption(with searchText: String) -> PlaceListViewOption {
         if searchText.isEmpty {
@@ -24,7 +24,6 @@ class PlacesListViewModel: ObservableObject {
     }
 
     func getPlaces(text: String) {
-        isLoading = true
         apiClient.request(text: text)
             .receive(on: DispatchQueue.main)
             .sink(

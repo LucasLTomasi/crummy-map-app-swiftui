@@ -28,6 +28,7 @@
 		070C387026972CF600AD9BE9 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C386F26972CF600AD9BE9 /* Image+Extensions.swift */; };
 		070C387B26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C387A26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift */; };
 		070C3883269740B400AD9BE9 /* CLLocationCoordinate2D+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C3882269740B400AD9BE9 /* CLLocationCoordinate2D+Extensions.swift */; };
+		07B7919D2697602100CCEA3D /* TextFieldObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7919C2697602100CCEA3D /* TextFieldObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		070C386F26972CF600AD9BE9 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 		070C387A26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extensions.swift"; sourceTree = "<group>"; };
 		070C3882269740B400AD9BE9 /* CLLocationCoordinate2D+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extensions.swift"; sourceTree = "<group>"; };
+		07B7919C2697602100CCEA3D /* TextFieldObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				070C3822269722EA00AD9BE9 /* API */,
 				070C384F2697248700AD9BE9 /* Extensions */,
+				07B7919B2697601600CCEA3D /* Helpers */,
 				070C38442697242700AD9BE9 /* Models */,
 				070C3808269716FC00AD9BE9 /* SupportingFiles */,
 				070C3858269725BB00AD9BE9 /* ViewModels */,
@@ -237,6 +240,14 @@
 				070C386226972C4B00AD9BE9 /* SearchBar.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		07B7919B2697601600CCEA3D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				07B7919C2697602100CCEA3D /* TextFieldObserver.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +383,7 @@
 				070C38512697249900AD9BE9 /* String+Extensions.swift in Sources */,
 				070C37DA2697160D00AD9BE9 /* PlacesListView.swift in Sources */,
 				070C381A26971BE000AD9BE9 /* PlaceDetailView.swift in Sources */,
+				07B7919D2697602100CCEA3D /* TextFieldObserver.swift in Sources */,
 				070C387026972CF600AD9BE9 /* Image+Extensions.swift in Sources */,
 				070C387B26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift in Sources */,
 				070C382E2697232300AD9BE9 /* APIClientProtocol.swift in Sources */,
