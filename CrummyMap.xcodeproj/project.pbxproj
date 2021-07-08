@@ -27,6 +27,7 @@
 		070C386B26972CE000AD9BE9 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C386A26972CE000AD9BE9 /* UIApplication+Extensions.swift */; };
 		070C387026972CF600AD9BE9 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C386F26972CF600AD9BE9 /* Image+Extensions.swift */; };
 		070C387B26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C387A26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift */; };
+		070C3883269740B400AD9BE9 /* CLLocationCoordinate2D+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C3882269740B400AD9BE9 /* CLLocationCoordinate2D+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		070C386A26972CE000AD9BE9 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		070C386F26972CF600AD9BE9 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 		070C387A26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extensions.swift"; sourceTree = "<group>"; };
+		070C3882269740B400AD9BE9 /* CLLocationCoordinate2D+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 		070C384F2697248700AD9BE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				070C3882269740B400AD9BE9 /* CLLocationCoordinate2D+Extensions.swift */,
 				070C386F26972CF600AD9BE9 /* Image+Extensions.swift */,
 				070C387A26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift */,
 				070C38502697249900AD9BE9 /* String+Extensions.swift */,
@@ -372,6 +375,7 @@
 				070C387026972CF600AD9BE9 /* Image+Extensions.swift in Sources */,
 				070C387B26973A7200AD9BE9 /* MKCoordinateRegion+Extensions.swift in Sources */,
 				070C382E2697232300AD9BE9 /* APIClientProtocol.swift in Sources */,
+				070C3883269740B400AD9BE9 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
 				070C386B26972CE000AD9BE9 /* UIApplication+Extensions.swift in Sources */,
 				070C3840269723D400AD9BE9 /* APIDecoder.swift in Sources */,
 				070C386326972C4B00AD9BE9 /* SearchBar.swift in Sources */,

@@ -11,8 +11,11 @@ struct PlaceDetailView: View {
                 .multilineTextAlignment(.center)
                 .padding()
             Map(coordinateRegion: .constant(MKCoordinateRegion.makeRegion(with: place.geometry)),
-                showsUserLocation: true)
-                .navigationBarTitle(String.Localizable.placeDetailViewTitle, displayMode: .inline)
+                showsUserLocation: true,
+                annotationItems: [CLLocationCoordinate2D.makeMapAnnotationItem(with: place.geometry)]) { item in
+                MapPin(coordinate: item.coordinate)
+            }
+            .navigationBarTitle(String.Localizable.placeDetailViewTitle, displayMode: .inline)
         }
     }
 }
