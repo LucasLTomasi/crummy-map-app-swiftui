@@ -27,6 +27,8 @@ struct PlacesListView: View {
         switch viewModel.getAppropriateViewOption(with: searchText) {
         case .idle:
             placesListPlaceholder
+        case .loading:
+            placesListLoading
         case .showPlaces:
             placesListWithResults
         }
@@ -37,8 +39,22 @@ struct PlacesListView: View {
             Spacer()
             Image.arrowtriangleUpFill
                 .resizable()
-                .frame(width: 30, height: 30)
+                .frame(width: 20, height: 20)
             Text(String.Localizable.placesListViewPlaceholderText)
+                .font(.title2)
+            Spacer()
+        }
+        .padding(.horizontal)
+    }
+
+    private var placesListLoading: some View {
+        VStack {
+            Spacer()
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle(tint: .primary))
+                .scaleEffect(1.5, anchor: .center)
+                .padding(.bottom, 8)
+            Text(String.Localizable.placesListViewLoading)
                 .font(.title2)
             Spacer()
         }

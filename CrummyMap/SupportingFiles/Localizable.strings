@@ -8,3 +8,4 @@
 // Place List View
 "places_list_view_title" = "Find a place";
 "places_list_view_placeholder_text" = "Type something\non the search bar";
+"places_list_view_loading" = "Loading...";

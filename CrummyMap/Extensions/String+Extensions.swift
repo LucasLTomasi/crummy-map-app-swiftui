@@ -12,5 +12,6 @@ extension String {
         // Places List View
         static let placesListViewTitle = NSLocalizedString("places_list_view_title", comment: "")
         static let placesListViewPlaceholderText = NSLocalizedString("places_list_view_placeholder_text", comment: "")
+        static let placesListViewLoading = NSLocalizedString("places_list_view_loading", comment: "")
     }
 }
