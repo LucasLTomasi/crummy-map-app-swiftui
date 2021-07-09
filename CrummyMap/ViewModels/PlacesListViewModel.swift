@@ -23,8 +23,8 @@ class PlacesListViewModel: ObservableObject {
         }
     }
 
-    func getPlaces(text: String) {
-        apiClient.request(text: text)
+    func getPlaces(with: String) {
+        apiClient.request(text: with)
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { [weak self] value in

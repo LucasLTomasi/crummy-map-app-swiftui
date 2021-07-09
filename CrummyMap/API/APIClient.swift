@@ -14,7 +14,7 @@ class APIClient: APIClientProtocol {
         static let key = "97461d67dbcb4c44b10ee23754ddf070"
     }
 
-    func makeURLComponents(with text: String) -> URLComponents {
+    private func makeURLComponents(with text: String) -> URLComponents {
         var components = URLComponents()
         components.scheme = OpenCageGeocoderAPI.scheme
         components.host = OpenCageGeocoderAPI.host

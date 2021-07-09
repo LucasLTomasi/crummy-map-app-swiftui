@@ -20,7 +20,7 @@ struct PlacesListView: View {
             viewModel.isLoading = true
         }
         .onReceive(textFieldObserver.$debouncedText, perform: { text in
-            viewModel.getPlaces(text: text)
+            viewModel.getPlaces(with: text)
         })
         .padding(.horizontal)
     }
